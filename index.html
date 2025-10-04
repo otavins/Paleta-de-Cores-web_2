@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Cores</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Paleta de Cores</h1>
+            <p>Gere cores aleatórias e explore diferentes paletas!</p>
+            <div class="autores">
+                <p><strong>Desenvolvido por:</strong> Otávio Sousa da Silva e Guilherme Pablo de Sousa Silva</p>
+            </div>
+        </header>
+
+        <!-- Seção Principal -->
+        <section class="secao-principal">
+            <div class="cor-visual" id="cor-visual"></div>
+            
+            <div class="codigos-cor">
+                <div class="codigo-item">
+                    <label>HEX:</label>
+                    <span id="codigo-hex">#000000</span>
+                </div>
+                <div class="codigo-item">
+                    <label>RGB:</label>
+                    <span id="codigo-rgb">rgb(0, 0, 0)</span>
+                </div>
+                <div class="codigo-item">
+                    <label>HSL:</label>
+                    <span id="codigo-hsl">hsl(0, 0%, 0%)</span>
+                </div>
+            </div>
+
+            <div class="botoes-principais">
+                <button id="btn-gerar" class="btn btn-primario">🎲 Gerar Nova Cor</button>
+                <button id="btn-copiar" class="btn btn-secundario">📋 Copiar HEX</button>
+                <button id="btn-salvar" class="btn btn-terciario">💾 Salvar Cor</button>
+            </div>
+        </section>
+
+        <!-- Seção Histórico -->
+        <section class="secao">
+            <h3>📚 Histórico Recente</h3>
+            <p>Últimas cores geradas (clique para usar)</p>
+            <div id="historico-cores" class="lista-cores"></div>
+        </section>
+
+        <!-- Seção Cores Salvas -->
+        <section class="secao">
+            <h3>⭐ Cores Salvas</h3>
+            <p>Suas cores favoritas</p>
+            <div class="controles-salvas">
+                <button id="btn-limpar" class="btn btn-perigo">🗑️ Limpar Todas</button>
+            </div>
+            <div id="cores-salvas" class="lista-cores"></div>
+        </section>
+
+        <!-- Seção Estatísticas -->
+        <section class="secao">
+            <h3>📊 Estatísticas</h3>
+            <div class="estatisticas">
+                <div class="stat-item">
+                    <span class="stat-label">Cores Geradas:</span>
+                    <span class="stat-value" id="total-geradas">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Cores Salvas:</span>
+                    <span class="stat-value" id="total-salvas">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Tempo de Uso:</span>
+                    <span class="stat-value" id="tempo-uso">0</span>s
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>💡 Dica: Pressione <kbd>ESPAÇO</kbd> para gerar uma nova cor rapidamente!</p>
+            <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.7;">
+                Desenvolvido por: <strong>Otávio Sousa da Silva</strong> e <strong>Guilherme Pablo de Sousa Silva</strong>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
